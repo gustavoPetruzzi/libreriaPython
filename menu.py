@@ -1,4 +1,4 @@
-class Menu:
+class Menu(object):
     
     def __init__(self, *opciones):
         self.opciones = opciones
@@ -12,7 +12,9 @@ class Menu:
         
         print '{0}. Salir'.format(nroOpcion, option)
         return raw_input("Ingrese opcion: ")
-        
+    
+    if __name__ == '__main__':
+        print 'Hello World'
             
         
     
